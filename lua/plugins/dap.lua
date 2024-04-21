@@ -28,7 +28,7 @@ return {
                 "javascriptreact",
             }) do
                 dap.configurations[lang] = dap.configurations[lang] or {}
-                table.insert(dap.configurations[lang], {
+                table.insert(dap.configurations[lang], 1, {
                     type = "pwa-chrome",
                     request = "launch",
                     name = "Launch Chrome",
@@ -37,6 +37,10 @@ return {
                 })
             end
         end,
+        keys = {
+            { "<leader>do", function() require("dap").step_over() end, desc = "Step Over" },
+            { "<leader>dO", function() require("dap").step_out() end, desc = "Step Out" },
+        },
     },
     {
         "rcarriga/nvim-dap-ui",
@@ -54,8 +58,8 @@ return {
                 },
                 {
                     elements = {
-                        { id = "repl", size = 0.5 },
-                        { id = "console", size = 0.5 },
+                        { id = "repl", size = 0.75 },
+                        { id = "console", size = 0.25 },
                     },
                     position = "bottom",
                     size = 10,
