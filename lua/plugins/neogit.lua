@@ -1,0 +1,30 @@
+return {
+    {
+        "NeogitOrg/neogit",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "sindrets/diffview.nvim",
+            "nvim-telescope/telescope.nvim",
+        },
+        keys = {
+            { "<leader>gg", "<cmd>Neogit<cr>", mode = "n", desc = "Neogit" },
+            { "<leader>gG", "<cmd>Neogit cwd=%:p:h<cr>", mode = "n", desc = "Neogit (cwd)" },
+            { "<leader>gC", "<cmd>Neogit commit<cr>", mode = "n", desc = "Commit" },
+        },
+        opts = {
+            highlight = { italic = false },
+        },
+    },
+    {
+        "sindrets/diffview.nvim",
+        cmd = { "DiffviewOpen", "DiffviewFileHistory" },
+        keys = {
+            { "<leader>og", "<cmd>DiffviewOpen<cr>", mode = "n", desc = "Open Diffview" },
+            { "<leader>ug", "<cmd>DiffviewToggleFiles<cr>", mode = "n", desc = "Toggle Diffview Files" },
+            { "<leader>qg", "<cmd>DiffviewClose<cr>", mode = "n", desc = "Quit Diffview" },
+        },
+        opts = {
+            file_panel = { position = "right" },
+        },
+    },
+}
