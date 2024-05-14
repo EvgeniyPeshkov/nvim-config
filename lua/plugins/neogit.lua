@@ -6,6 +6,8 @@ return {
             "sindrets/diffview.nvim",
             "nvim-telescope/telescope.nvim",
         },
+        cmd = { "Neogit" },
+        -- stylua: ignore
         keys = {
             { "<leader>gg", "<cmd>Neogit<cr>", mode = "n", desc = "Neogit" },
             { "<leader>gG", "<cmd>Neogit cwd=%:p:h<cr>", mode = "n", desc = "Neogit (cwd)" },
@@ -18,6 +20,7 @@ return {
     {
         "sindrets/diffview.nvim",
         cmd = { "DiffviewOpen", "DiffviewFileHistory" },
+        -- stylua: ignore
         keys = {
             { "<leader>og", "<cmd>DiffviewOpen<cr>", mode = "n", desc = "Open Diffview" },
             { "<leader>ug", "<cmd>DiffviewToggleFiles<cr>", mode = "n", desc = "Toggle Diffview Files" },
