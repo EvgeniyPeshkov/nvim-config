@@ -27,7 +27,9 @@ return {
             { "<leader>qg", "<cmd>DiffviewClose<cr>", mode = "n", desc = "Quit Diffview" },
         },
         opts = {
-            file_panel = { position = "right" },
+            file_panel = {
+                win_config = { position = "right" },
+            },
         },
     },
 }
