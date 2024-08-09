@@ -6,6 +6,6 @@ return {
     config = function(_, opts)
         require("scrollbar").setup(opts)
         require("scrollbar.handlers.gitsigns").setup()
-        require("scrollbar.handlers.search").setup()
+        -- require("scrollbar.handlers.search").setup()
     end,
 }

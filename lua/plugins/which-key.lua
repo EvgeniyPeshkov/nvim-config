@@ -4,8 +4,9 @@ return {
         { ",", "<cmd>WhichKey<cr>", mode = { "n", "v" }, desc = "Open WhichKey" },
     },
     opts = {
-        defaults = {
-            ["<leader>o"] = { name = "+open" },
+        spec = {
+            { "<leader>o", group = "open" },
         },
+        icons = { mappings = false },
     },
 }
