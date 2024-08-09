@@ -33,6 +33,7 @@ return {
                     request = "launch",
                     name = "Launch Chrome",
                     url = "http://localhost:3000",
+                    webRoot = "${workspaceFolder}",
                     sourceMaps = true,
                 })
             end

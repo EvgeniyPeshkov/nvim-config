@@ -15,6 +15,10 @@ return {
         },
         opts = {
             highlight = { italic = false },
+            sections = {
+                untracked = { folded = true },
+                unstaged = { folded = true },
+            },
         },
     },
     {
