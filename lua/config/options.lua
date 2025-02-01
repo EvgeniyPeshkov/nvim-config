@@ -4,6 +4,7 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.g.autoformat = false
 vim.g.fixeol = true
+vim.g.ai_cmp = false
 if vim.fn.has("win32") then
     vim.o.shell = "pwsh.exe"
 end

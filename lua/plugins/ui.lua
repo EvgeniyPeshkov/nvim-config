@@ -2,6 +2,7 @@ return {
     {
         "folke/snacks.nvim",
         opts = function(_, opts)
+            opts.scroll.enabled = false
             for _, v in ipairs(opts.dashboard.preset.keys) do
                 if string.find(v.desc, "Restore Session") then
                     v.action = ':lua require("persistence").load({last=true})'
@@ -21,6 +22,7 @@ return {
         },
         opts = {
             preset = "classic",
+            win = { no_overlap = false },
             icons = { mappings = false },
             spec = {
                 { "<leader>o", group = "open" },
