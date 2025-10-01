@@ -5,7 +5,7 @@ vim.opt.softtabstop = 4
 vim.g.autoformat = false
 vim.g.fixeol = true
 vim.g.ai_cmp = false
-if vim.fn.has("win32") then
+if vim.fn.has("win32") == 1 then
     vim.o.shell = "pwsh.exe"
 end
 if (vim.g.neovide) then

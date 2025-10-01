@@ -2,7 +2,9 @@ return {
     {
         "folke/snacks.nvim",
         opts = function(_, opts)
-            opts.scroll.enabled = false
+            opts.scroll = { enabled = false }
+            opts.image = { enabled = false }
+            opts.terminal.win = { height = 0.25 }
             for _, v in ipairs(opts.dashboard.preset.keys) do
                 if string.find(v.desc, "Restore Session") then
                     v.action = ':lua require("persistence").load({last=true})'
@@ -53,5 +55,5 @@ return {
                 always_show_bufferline = true,
             },
         },
-    }
+    },
 }
