@@ -11,6 +11,21 @@ return {
                         ondir(root)
                     end,
                 },
+                clangd = {
+                    root_markers = {
+                        "compile_flags.txt",
+                        "configure.ac",
+                        "Makefile",
+                        "configure.ac",
+                        "configure.in",
+                        "config.h.in",
+                        "meson_options.txt",
+                        "meson.build",
+                        "build.ninja",
+                        "compile_commands.json",
+                        ".git",
+                    },
+                },
             },
         },
     },

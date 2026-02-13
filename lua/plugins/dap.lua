@@ -64,6 +64,7 @@ return {
                     size = 10,
                 },
             },
+            expand_lines = false,
         },
     },
 }
